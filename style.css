@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    background-color: #eaceb4;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+}
+
+.img-logo {
+    height: 80%;
+    border-radius: 10px;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color: #bb5a5a;
+    font-weight: 400;
+    font: size 14px;
+}
+
+.cart-icon {
+    font-weight: 800;
+    border-radius: 10px;
+    height: 35px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    color: lightgray;
+    cursor: pointer;
+}
