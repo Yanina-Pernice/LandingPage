@@ -2,27 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
+
+
+/* body  */
+
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(234,206,180,1) 100%); 
+}
+
 
 /* Header */
 
 header {
-    background-color: #eaceb4;
+    /* background-color: #eaceb4; */
     height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
-    position: fixed;
 }
 
 .img-logo {
-    height: 80%;
-    border-radius: 10px;
+    border-radius: 150px;
+    padding: 0.5vh;
+    height: 150%;
+    margin-top: 5px;
 }
 
 .navbar,
@@ -42,8 +55,8 @@ header {
 
 .navbar-list a {
     color: #bb5a5a;
-    font-weight: 400;
-    font: size 14px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .cart-icon {
@@ -54,4 +67,95 @@ header {
     margin-right: 1rem;
     color: lightgray;
     cursor: pointer;
+}
+
+/* Section Hero*/
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    flex-wrap: wrap;
+    padding: 4vw;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.hero-info h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #bb5a5a;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-info p {
+    font-size: 1rem;
+    width: 30vw;
+    color: #757575;
+    
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.hero-buttons button {
+    background: coral;
+    color: whitesmoke;
+    width: 8vw;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-buttons button:hover{
+    color:#00223E;
+    background-color: #FFA17F;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 40vw;
+}
+
+/* Section Description */
+
+.description {
+    text-align: center;
+    padding: 2vh 15vw;
+    /* color: #bb5a5a; */
+    color:#757575;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p span {
+    font-weight: bolder;
+    color: #bb5a5a;
 }
