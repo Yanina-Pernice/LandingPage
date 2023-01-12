@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/animation.css">
+
     <title>Landing Page</title>
 </head>
 
@@ -18,6 +24,12 @@
 
         <nav class="navbar">
 
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/cart/navigation-menu.png" alt="menu" class="menu-icon">
+            </label>
+
+            <input type="checkbox" id="menu-toggle">
+
             <ul class="navbar-list">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
@@ -26,10 +38,14 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
 
-            <img class="cart-icon" src="./assets/cart/shopping cart.png" alt="carrito de compras">
-
+            <label for="cart-toggle" class="cart-label">
+                <!-- <img class="cart-icon" src="./assets/cart/shopping cart.png" alt="carrito de compras"> -->
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </label>
+          
         </nav>
     </header>
+
     <!-- Section Hero -->
     <section id="hero">
 
@@ -40,7 +56,7 @@
                 Nos dedicamos a fabricar velas aromáticas a base de cera de soja para crear buenos momentos e inundar de
                 magia tus espacios.
             </p>
-            <div class="hero-buttons">
+            <div class="hero-buttons translateY transition">
                 <button>Contacto</button>
                 <button>Ver más</button>
             </div>
@@ -51,14 +67,14 @@
             <img src="./assets/img/Velas.jpg" alt="candles-hygge" class="hero-img" />
 
         </div>
-
-
-
     </section>
+
+    <!-- Description -->
 
     <section class="description">
         <p>
-            <span>nina♥</span> es un emprendimiento nacional que elabora velas y difusores hechos a mano <span>con amor y calidad</span>.
+            <span>nina♥</span> es un emprendimiento nacional que elabora velas y difusores hechos a mano <span>con amor
+                y calidad</span>.
             Las velas de soja desprenden su aroma con más intensidad, durabilidad y rapidez. Ideales para meditar,
             relajarse, tomar un baño de inmersión o ambientar momentos únicos.
             Se les puede agregar aceites esenciales para disfrutar de los beneficios de la aromaterapia de acuerdo a las
@@ -68,6 +84,179 @@
             <span>Te invitamos a ser parte!</span>
         </p>
     </section>
+
+    <!--Section Cards-->
+
+    <div class="section-cards">
+        <div class="cards">
+
+            <h2>¿Por qué elegirnos?</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam quidem eum omnis eveniet. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium ratione ullam aspernatur
+                illum nisi voluptatum placeat quo aliquid suscipit velit reiciendis error debitis eius nesciunt
+                incidunt, harum magni. Possimus.</p>
+
+        </div>
+
+        <div class="benefits">
+
+            <div class="benefit-item">
+                <i class="fa-regular fa-paper-plane fa-2x benefit-icon"></i>
+                <h3>Envíos</h3>
+                <p>Realizamos envíos a todo el país.</p>
+            </div>
+
+            <div class="benefit-item">
+                <i class="fa-solid fa-fire benefit-icon fa-2x benefit-icon"></i>
+                <h3>Calidad</h3>
+                <p>Contamos con materia prima de excelente calidad para realizar cada uno de nuestros productos. 100%
+                    artesanales y el envase contenedor es totalmente reciclable.</p>
+            </div>
+
+            <div class="benefit-item">
+                <i class="fa-regular fa-heart fa-2x benefit-icon"></i>
+                <h3>Ecológicas</h3>
+                <p>Además de la cera de soja, nuestras mechas están elaboradas con filamentos de algodón 100% naturales.
+                    Convirtiendo nuestros productos concienciados con la naturaleza.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Section Contacts -->
+
+    <div id="section-contacts">
+
+        <div class="location">
+            <div>
+                <h2>Contactenos</h2>
+            </div>
+
+            <div class="contact-cards"> 
+                
+                <div class="contact-info">
+                    <h3>Belgrano</h3>
+
+                    <li class="contact-item">
+                        <i class="fa-solid fa-location-dot fa-logo"></i>
+                        <p class="contact-link"> Calle Falsa 123</p>
+                    </li>
+
+                    <li class="contact-item">
+                        <i class="fa-regular fa-envelope fa-logo"></i>
+                        <a href="#" class="contact-link"> mail@mail.com</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <i class="fa-solid fa-phone fa-logo"></i>
+                        <a href="#" class="contact-link">(011) 1212121212</a>
+                    </li>
+
+                </div>
+
+                <div class="contact-info">
+                    <h3>Vicente Lopez</h3>
+                    
+                    <li class="contact-item">
+                        <i class="fa-solid fa-location-dot fa-logo"></i>
+                        <p class="contact-link"> Calle Falsa 123</p>
+                    </li>
+
+                    <li class="contact-item">
+                        <i class="fa-regular fa-envelope fa-logo"></i>
+                        <a href="#" class="contact-link"> mail@mail.com</a>
+                    </li>
+
+                    <li class="contact-item">
+                        <i class="fa-solid fa-phone fa-logo"></i>
+                        <a href="#" class="contact-link">(011) 1212121212</a>
+                    </li>
+
+                </div>
+
+            </div>
+
+            <div class="social-media">
+             
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+
+            </div>
+
+        </div>
+
+        <div class="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6627392769233!2d-58.45898208519681!3d-34.56209366280309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3849d8c5d%3A0xe8c7b165f4a25279!2sAv.%20Juramento%20%26%20Av.%20Cabildo%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1673219110116!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- article-->
+    <hr class="solid">
+
+    <article class="article">
+
+        <div class="a-medios">
+
+            <div class="medios-pago">
+                <h5>MEDIOS DE PAGO</h5>
+                <img class="medios-img" src="assets/medios de pago/mercadopago.png" lt="Medio Pago">
+                <img class="medios-img" src="assets/medios de pago/visa.png" alt="Medio Pago">
+                <img class="medios-img" src="assets/medios de pago/american-express.png"                 alt="Medio Pago">
+                <img class="medios-img" src="assets/medios de pago/pagofacil.png" alt="Medio Pago">
+                <img class="medios-img" src="assets/medios de pago/rapipago.png" alt="Medio Pago">
+
+            </div>
+        
+
+            <div class="a-envios">
+
+                <div class="medios-envio">
+                    <h5>MEDIOS DE ENVÍO</h5>
+                    <img class="medios-img" src="assets/envios/correo-argentino.png" alt="medios-de-envio">
+
+                    <img class="medios-img" src="assets/envios/oca@2x.png" alt="medios-de-envio">
+
+                    <img class="medios-img" src="assets/envios/acordar.png" alt="medios-de-envio">    
+                </div>     
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <!-- footer -->
+
+    <hr class="solid">
+
+    <footer class="footer">
+
+        <div class="footer-cr">
+
+            <img class="footer-logo" src="./assets/logo.png" alt="logo"> 
+        
+            <span>Copyright 2023</span>
+    
+        </div>
+
+        <div class="chat">
+            <a href="#" alt="chat-wsp">
+
+                <div class="chat-bubble chat-wsp">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          
+                </div>
+            </a>
+            
+        </div> 
+
+    </footer>
 
 </body>
 

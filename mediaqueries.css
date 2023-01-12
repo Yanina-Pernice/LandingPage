@@ -1,0 +1,210 @@
+/* Tablet */
+@media(max-width: 768px) {
+
+
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .cart-icon {
+        height: 38px;
+        margin-right: 0rem;
+        margin-top: 4px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 60px;
+        left: 55%;
+        width: 45%;
+        flex-direction: column;
+        background-color: #ede0d4;
+        color: #b08968;
+        border: 2px solid lightgray;
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+        padding: 30px 30px;
+        gap: 25px;
+        z-index: 2;
+    }
+
+    .navbar-list a {
+        font-size: 16px;
+    }
+
+    /* mostramos icono menu */
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #menu-toggle:checked +
+    .navbar-list {
+        display: flex;
+    }
+
+    /* section hero */
+
+      .hero-info{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+    }
+
+    .hero-info h1{
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .hero-info p{
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .hero-img{
+        display:none;
+    }
+
+    .hero-buttons button {
+        width: 20vw;
+        padding: 1rem .5rem;
+        font-size: 16px;
+    } 
+
+    /* Description */
+
+    .description p{
+        font-size: 1rem;
+    }
+
+    /* Section Cards */   
+
+    .cards p {
+        font-size: 1em;
+        padding: 2vh 0.5vw;
+      
+    }
+
+    .benefits{
+        flex-wrap: wrap;
+    }
+
+    .benefit-icon{
+        height: 40px;
+        width: 40px;
+        font-size: larger;
+    
+    }
+
+    /* Section Contacts */
+
+    #section-contacts {
+        width:auto;
+
+        margin: 2vw 8vw;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: aquamarine;
+
+    }
+
+    .contact-cards{
+        width: auto;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #b08968;
+    }
+
+    .location{
+        width: 70vw;
+        padding: 0.5vh 2vw 0.5vh 10vw;
+        margin: 2rem;
+        background-color: crimson;
+
+    .location h2{
+        text-align: center;
+        width: 8vw;
+        background-color: brown;
+    }
+
+    .contact-info{
+        padding: 30px 30px;
+        background-color: blueviolet;
+    }
+
+    
+    .maps{
+        padding: 0.5vh 2vw 0.5vh 5vw;
+        margin: 1rem 0.5rem 1rem 6rem;
+        background-color: brown;
+    }
+  
+    .maps iframe{
+        width: 62vw;
+        height: 50vh;
+       
+    }
+
+    /* Article */
+
+    .article{
+        background-color: #fff;
+    }
+
+    .a-medios{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .medios-pago,
+    .medios-envio{
+        gap:10px;
+    }
+
+}
+
+
+
+
+
+
+
+/* Celular */
+
+@media(max-width: 576px) 
+    /* Modificar carrito para celular */
+   
+  
+
+    .cart-item{
+        flex-wrap: wrap;
+    }
+
+    /* Hero */
+
+    .hero-info p {
+        width: 70%;
+        max-width: unset;
+    }
+
+    /* Info */
+
+
+    footer p {
+        font-size: clamp(12px, 5vh, 18px);
+        cursor: auto;
+      }
