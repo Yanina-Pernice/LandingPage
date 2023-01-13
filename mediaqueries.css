@@ -1,7 +1,14 @@
 /* Tablet */
 @media(max-width: 768px) {
 
-
+    #section-hero,
+    #section-description,
+    .section-cards,
+    #section-contacts,
+    #section-tips {
+        margin-right: 4vw;
+        margin-left: 4vw;
+    }
 
     .navbar {
         gap: 15px;
@@ -16,24 +23,27 @@
     .navbar-list {
         position: absolute;
         top: 60px;
-        left: 55%;
-        width: 45%;
+        left: 60%;
+        width: 40%;
         flex-direction: column;
-        background-color: #ede0d4;
-        color: #b08968;
-        border: 2px solid lightgray;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #f4f3ee;
+        border: 1px solid #e7d8c9;
         border-top: 0;
         border-radius: 0 0 15px 15px;
         padding: 30px 30px;
         gap: 25px;
         z-index: 2;
+        display: none;
     }
 
     .navbar-list a {
-        font-size: 16px;
+        font-size: 18px;
+        color: #e26d5c;
     }
 
-    /* mostramos icono menu */
+    /* MOSTRAMOS ICONO MENU */
     .menu-label {
         display: flex;
         order: 2;
@@ -45,166 +55,166 @@
         width: 35px;
     }
 
-    #menu-toggle:checked +
-    .navbar-list {
+    #menu-toggle:checked+.navbar-list {
         display: flex;
     }
 
-    /* section hero */
+    #section-hero {
+        padding: 3vw;
+    }
 
-      .hero-info{
+    .hero-info {
         width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        gap:30px;
+        padding: 0vw;
     }
 
-    .hero-info h1{
-        width: 90%;
-        max-width: 500px;
-        min-width: unset;
+    .hero-info p {
+        font-size: 1.75vw;
+        width: 60vw;
     }
 
-    .hero-info p{
-        width: 60%;
-        max-width: 600px;
-    }
-
-    .hero-img{
-        display:none;
+    .hero-photo {
+        display: none;
     }
 
     .hero-buttons button {
-        width: 20vw;
-        padding: 1rem .5rem;
-        font-size: 16px;
-    } 
-
-    /* Description */
-
-    .description p{
-        font-size: 1rem;
+        width: 20%;
+        font-size: 2vw;
     }
 
-    /* Section Cards */   
-
-    .cards p {
-        font-size: 1em;
-        padding: 2vh 0.5vw;
-      
+    #section-description p,
+    .benefit-item,
+    .cards p,
+    #section-tips p,
+    .tips-list ul {
+        font-size: 1.75vw;
     }
 
-    .benefits{
-        flex-wrap: wrap;
-    }
-
-    .benefit-icon{
-        height: 40px;
-        width: 40px;
-        font-size: larger;
-    
-    }
-
-    /* Section Contacts */
-
-    #section-contacts {
-        width:auto;
-
-        margin: 2vw 8vw;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: column;
-        background-color: aquamarine;
-
-    }
-
-    .contact-cards{
-        width: auto;
-        justify-content: space-between;
-        padding: 30px;
-        background-color: #b08968;
-    }
-
-    .location{
-        width: 70vw;
-        padding: 0.5vh 2vw 0.5vh 10vw;
-        margin: 2rem;
-        background-color: crimson;
-
-    .location h2{
-        text-align: center;
-        width: 8vw;
-        background-color: brown;
-    }
-
-    .contact-info{
-        padding: 30px 30px;
-        background-color: blueviolet;
-    }
-
-    
-    .maps{
-        padding: 0.5vh 2vw 0.5vh 5vw;
-        margin: 1rem 0.5rem 1rem 6rem;
-        background-color: brown;
-    }
-  
-    .maps iframe{
-        width: 62vw;
-        height: 50vh;
-       
-    }
-
-    /* Article */
-
-    .article{
-        background-color: #fff;
-    }
-
-    .a-medios{
-        flex-wrap: wrap;
+    .location {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: space-between;
+        width: 90vw;
+        padding: 2vw;
     }
 
-    .medios-pago,
-    .medios-envio{
-        gap:10px;
+    .cards {
+        padding: 0vh 2vw 4vw 2vw;
+    }
+
+    .benefit-item {
+        padding: 2vw 1vw;
+    }
+
+    #section-contacts {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .maps {
+        width: 80%;
     }
 
 }
 
-
-
-
-
-
-
 /* Celular */
+@media(max-width: 576px) {
 
-@media(max-width: 576px) 
-    /* Modificar carrito para celular */
-   
-  
-
-    .cart-item{
-        flex-wrap: wrap;
+    #section-hero {
+        padding: 0;
     }
 
-    /* Hero */
+    #section-hero,
+    #section-description,
+    .section-cards,
+    #section-contacts,
+    #section-tips {
+        margin-right: 6vw;
+        margin-left: 6vw;
+    }
+
+    .hero-info h1 {
+        font-size: 6vw;
+    }
 
     .hero-info p {
-        width: 70%;
-        max-width: unset;
+        font-size: 3vw;
+        width: 100%;
     }
 
-    /* Info */
+    .hero-buttons {
+        width: 100%;
+        gap: 15px;
+    }
 
+    .hero-buttons button {
+        background: coral;
+        color: whitesmoke;
+        width: 30%;
+        font-size: 3vw;
+    }
 
-    footer p {
-        font-size: clamp(12px, 5vh, 18px);
-        cursor: auto;
-      }
+    #section-description {
+        margin-bottom: 6vh;
+    }
+
+    #section-description p {
+        font-size: 3vw;
+    }
+
+    .cards {
+        padding: 0vh;
+    }
+
+    .cards p {
+        text-align: justify;
+        font-size: 3vw;
+    }
+
+    .benefits {
+        flex-wrap: wrap;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    .benefit-item p,
+    .benefit-item h3 {
+        font-size: 3vw;
+    }
+
+    #section-tips p,
+    .tips-list ul {
+        font-size: 3vw;
+    }
+
+    .contact-cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .location h2 {
+        text-align: center;
+        margin: 2vw 4vw 2vw 4vw;
+    }
+
+    .maps {
+        width: 90%;
+        height: 50%;
+    }
+
+    .a-medios {
+        flex-direction: column;
+    }
+
+    .medios-envio {
+        justify-content: center;
+    }
+    
+    .footer-logo {
+        height: 6vh;
+    }
+
+}

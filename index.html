@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/animation.css">
+    <link rel="stylesheet" href="./animations.css">
+
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
 
     <title>Landing Page</title>
 </head>
@@ -31,23 +33,24 @@
             <input type="checkbox" id="menu-toggle">
 
             <ul class="navbar-list">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#section-hero">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
-                <li><a href="#">Tips</a></li>
-                <li><a href="#">Envíos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#section-tips">Tips</a></li>
+                <li><a href="#section-article">Envíos</a></li>
+                <li><a href="#section-contacts">Contacto</a></li>
             </ul>
 
             <label for="cart-toggle" class="cart-label">
-                <!-- <img class="cart-icon" src="./assets/cart/shopping cart.png" alt="carrito de compras"> -->
                 <i class="fa-solid fa-cart-shopping cart-icon"></i>
             </label>
-          
+
+            <div class="overlay"></div> 
+
         </nav>
     </header>
 
     <!-- Section Hero -->
-    <section id="hero">
+    <section id="section-hero">
 
         <div class="hero-info">
             <h1>Aromas que perduran en el alma.</h1>
@@ -56,13 +59,14 @@
                 Nos dedicamos a fabricar velas aromáticas a base de cera de soja para crear buenos momentos e inundar de
                 magia tus espacios.
             </p>
+
             <div class="hero-buttons translateY transition">
                 <button>Contacto</button>
                 <button>Ver más</button>
             </div>
         </div>
 
-        <div class="hero-img">
+        <div class="hero-photo">
 
             <img src="./assets/img/Velas.jpg" alt="candles-hygge" class="hero-img" />
 
@@ -71,7 +75,7 @@
 
     <!-- Description -->
 
-    <section class="description">
+    <section id="section-description">
         <p>
             <span>nina♥</span> es un emprendimiento nacional que elabora velas y difusores hechos a mano <span>con amor
                 y calidad</span>.
@@ -87,7 +91,7 @@
 
     <!--Section Cards-->
 
-    <div class="section-cards">
+    <section class="section-cards">
         <div class="cards">
 
             <h2>¿Por qué elegirnos?</h2>
@@ -123,69 +127,99 @@
 
         </div>
 
-    </div>
+    </section>
+
+    <!-- Section Tips -->
+    <section id="section-tips">
+        <h2>Tips</h2>
+        <p>
+            Para poder aprovechar las velas de soja al máximo recomendamos lo siguiente:
+        </p>
+
+        <div class="tips-list">
+            <ul class="ul-tips">
+                <li>
+                    *En el primer encendido de la vela no se debe apagar, al menos, hasta que la cera derretida haya
+                    tocado los bordes del envase. Así se quemará de forma pareja.
+                </li>
+
+                <li>
+                    *Apágalas con un apaga-velas o quitándole el oxígeno. Esto evita
+                    que el hollín del pabilo caiga en la superficie derretida de la vela, perjudicando su estética.
+                </li>
+
+                <li>
+                    *Su uso no debe sobrepasar las 3hs/4hs. Pasado este tiempo sugerimos apagarlas hasta que la cera
+                    vuelva a solidificarse nuevamente por completo.
+                </li>
+
+                <li>
+                    *No exponerlas a temperaturas altas. Debido a que el punto de fusión de la soja es muy bajo (40ºC)
+                    no se debe exponer al sol directo o al calor intenso.
+                </li>
+
+                <li>
+                    *Al estar encendida debe apoyarse en superficies firmes, lejos de niños y mascotas.
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
 
     <!-- Section Contacts -->
 
-    <div id="section-contacts">
+    <section id="section-contacts">
+
 
         <div class="location">
-            <div>
-                <h2>Contactenos</h2>
-            </div>
 
-            <div class="contact-cards"> 
-                
+            <h2>Contacto</h2>
+
+            <div class="contact-cards">
+
                 <div class="contact-info">
-                    <h3>Belgrano</h3>
+                    <h4>Belgrano</h4>
 
                     <li class="contact-item">
                         <i class="fa-solid fa-location-dot fa-logo"></i>
-                        <p class="contact-link"> Calle Falsa 123</p>
+                        <p> Calle Falsa 123</p>
                     </li>
 
                     <li class="contact-item">
                         <i class="fa-regular fa-envelope fa-logo"></i>
-                        <a href="#" class="contact-link"> mail@mail.com</a>
+                        <a href="#"> mail@mail.com</a>
                     </li>
 
                     <li class="contact-item">
                         <i class="fa-solid fa-phone fa-logo"></i>
-                        <a href="#" class="contact-link">(011) 1212121212</a>
+                        <a href="#">(011) 1212121212</a>
                     </li>
 
                 </div>
 
                 <div class="contact-info">
-                    <h3>Vicente Lopez</h3>
-                    
+                    <h4>Vicente Lopez</h4>
+
                     <li class="contact-item">
                         <i class="fa-solid fa-location-dot fa-logo"></i>
-                        <p class="contact-link"> Calle Falsa 123</p>
+                        <p> Calle Falsa 123</p>
                     </li>
 
                     <li class="contact-item">
                         <i class="fa-regular fa-envelope fa-logo"></i>
-                        <a href="#" class="contact-link"> mail@mail.com</a>
+                        <a href="#"> mail@mail.com</a>
                     </li>
 
                     <li class="contact-item">
                         <i class="fa-solid fa-phone fa-logo"></i>
-                        <a href="#" class="contact-link">(011) 1212121212</a>
+                        <a href="#">(011) 1212121212</a>
                     </li>
 
                 </div>
 
             </div>
-
-            <div class="social-media">
-             
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-
-            </div>
-
+          
         </div>
 
         <div class="maps">
@@ -194,36 +228,32 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>
+
+    </section>
 
     <!-- article-->
-    <hr class="solid">
 
-    <article class="article">
+    <article id="section-article">
 
         <div class="a-medios">
 
             <div class="medios-pago">
+
                 <h5>MEDIOS DE PAGO</h5>
                 <img class="medios-img" src="assets/medios de pago/mercadopago.png" lt="Medio Pago">
                 <img class="medios-img" src="assets/medios de pago/visa.png" alt="Medio Pago">
-                <img class="medios-img" src="assets/medios de pago/american-express.png"                 alt="Medio Pago">
+                <img class="medios-img" src="assets/medios de pago/american-express.png" alt="Medio Pago">
                 <img class="medios-img" src="assets/medios de pago/pagofacil.png" alt="Medio Pago">
                 <img class="medios-img" src="assets/medios de pago/rapipago.png" alt="Medio Pago">
 
             </div>
-        
 
-            <div class="a-envios">
+            <div class="medios-envio">
 
-                <div class="medios-envio">
-                    <h5>MEDIOS DE ENVÍO</h5>
-                    <img class="medios-img" src="assets/envios/correo-argentino.png" alt="medios-de-envio">
-
-                    <img class="medios-img" src="assets/envios/oca@2x.png" alt="medios-de-envio">
-
-                    <img class="medios-img" src="assets/envios/acordar.png" alt="medios-de-envio">    
-                </div>     
+                <h5>MEDIOS DE ENVÍO</h5>
+                <img class="medios-img" src="assets/envios/correo-argentino.png" alt="medios-de-envio">
+                <img class="medios-img" src="assets/envios/oca@2x.png" alt="medios-de-envio">
+                <img class="medios-img" src="assets/envios/acordar.png" alt="medios-de-envio">
 
             </div>
 
@@ -233,28 +263,35 @@
 
     <!-- footer -->
 
-    <hr class="solid">
+    <footer class="section-footer">
 
-    <footer class="footer">
+        <div class="social-media">
+
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-facebook fa-lg"></i>
+
+        </div>
 
         <div class="footer-cr">
 
-            <img class="footer-logo" src="./assets/logo.png" alt="logo"> 
-        
-            <span>Copyright 2023</span>
-    
+            <img class="footer-logo" src="./assets/logo.png" alt="logo">
+
+            <p>Copyright 2023</p>
+
         </div>
 
-        <div class="chat">
-            <a href="#" alt="chat-wsp">
+        <div class="bubble-arrow arrow">
+            <a href="#" alt="flecha">
 
-                <div class="chat-bubble chat-wsp">
-                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-          
+                <div class="arrow">
+
+                    <i class="fa-solid fa-arrow-up"></i>
+
                 </div>
             </a>
-            
-        </div> 
+
+        </div>
 
     </footer>
 
